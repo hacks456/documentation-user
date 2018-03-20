@@ -35,6 +35,7 @@ Create a new branch:
   $ git checkout -b feature-1 master
 
 Replace:
+
 * *feature-1* by the name of your choice,
 * *master* by the name of your production branch. If you just created your project, and do not have a production branch,
 you can leave *master*.
@@ -94,7 +95,7 @@ Uncomment the content of the files:
 * views/views.xml,
   a tree and a form view, with the menus opening them,
 * demo/demo.xml,
-  Demo records for the above example model.
+  demo records for the above example model,
 * controllers/controllers.py,
   an example of controller implementing some routes,
 * views/templates.xml,
@@ -111,5 +112,24 @@ Push the development branch
 ===========================
 
 .. code-block:: bash
+  $ git add my_module
 
-  $ git push -u origin feature-1
+Replace:
+
+* *my_module* with the name you gave to your module
+
+.. code-block:: bash
+
+  $ git commit -m "My first module"
+
+Replace:
+
+* *My first module* with the comment of your choice to describe your changes
+
+.. code-block:: bash
+
+  $ git push --set-upstream origin feature-1
+
+Replace:
+
+* *feature-1* by the name of your branch
